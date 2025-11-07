@@ -1,9 +1,14 @@
 const names = [{
-    "mmlht": "શરણમ ચોટાઈ",
-    "avcot": "પ્રિયંકા પટેલ",
-    "kamleshmasa": "કમલેશ કારિયા",
-    "sureshbhai": "સુરેશભાઈ પટેલ",
-    "jayshreeben": "જયશ્રીબેન પટેલ",
+    "sharanam": "શરણમ ચોટાઈ",
+    'chotai': 'મહેશભાઈ ચોટાઈ',
+    "dhokai": "અતુલભાઈ ધોકાઈ",
+    "idxteam": "સાઇમન વર્ઘીસ, ભાવેશ ગુપ્તા, દિક્ષિત સોલંકી, દીપ પટેલ, દર્શક શાહ, દીપ શર્મા, મન્દાર રીસ્બદ, અંકુર શર્મા. (સહ-પરિવાર)",
+    "kamleshmasa": "કમલેશભાઈ કારિયા અને પરિવાર",
+    "sata": "સાતા અરવિંદભાઈ અને પરિવાર",
+    "raythatha": "દામોદરભાઈ રાયઠઠા અને પરિવાર",
+    "kundanfoi": "કારિયા નવીનભાઈ અને પરિવાર",
+    "motapappa": "કિરીટભાઈ લાલચેતા અને પરિવાર",
+    "simariya": "સીમરીયા જલ્પેશ, નિશા અને પરિવાર",
     "family": "પ્રિય પરિવાર અને મિત્રો"
 }]
 
@@ -59,16 +64,3 @@ window.addEventListener('scroll', () => {
     const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
     pageSizeScrollIndicator.style.width = scrollPercent + '%';
 });
-
-// request full screen, on load.
-window.onload = function () {
-    if (document.documentElement.requestFullscreen) {
-        document.documentElement.requestFullscreen();
-    } else if (document.documentElement.mozRequestFullScreen) { /* Firefox */
-        document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-        document.documentElement.webkitRequestFullscreen();
-    } else if (document.documentElement.msRequestFullscreen) { /* IE/Edge */
-        document.documentElement.msRequestFullscreen();
-    }
-};

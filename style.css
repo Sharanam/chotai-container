@@ -192,17 +192,21 @@ section.names {
     min-width: 450ch;
     color: #B22222;
     position: relative;
+    text-decoration: underline;
+    /* display: inline-block;
+    margin-block: 0; */
+    width: 100%;
 
-    &::after {
+    /* &::after {
         content: "";
         position: absolute;
         left: 0;
         bottom: 4px;
         min-width: 100%;
-        /* width: 20ch; */
+        /* width: 20ch; * /
         display: block;
         border-bottom: 1px solid #B22222;
-    }
+    } */
 }
 
 section {
@@ -227,6 +231,12 @@ section {
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         /* background: linear-gradient(90deg, #ff7e5f, #feb47b); */
     }
+}
+
+.event-illustration {
+    height: 80px;
+    display: block;
+    margin-top: 10px;
 }
 
 section.names {
