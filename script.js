@@ -22,39 +22,6 @@ if (id && names[0][id]) {
     }
 }
 
-const headerAnimation = lottie.loadAnimation({
-    container: document.getElementById('header-animation'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://lottie.host/4d5b5c8d-9f8a-4a1a-8b2a-3c4d5e6f7g8h/data.json' // Wedding rings animation
-});
-
-const day1Animation = lottie.loadAnimation({
-    container: document.getElementById('day1-animation'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://lottie.host/1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p/data.json' // Mandap/ceremony animation
-});
-
-const venueAnimation = lottie.loadAnimation({
-    container: document.getElementById('venue-animation'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://lottie.host/7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2v/data.json' // Location/venue animation
-});
-
-const closingAnimation = lottie.loadAnimation({
-    container: document.getElementById('closing-animation'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://lottie.host/3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r/data.json' // Blessing/namaste animation
-});
-
-
 // load each section with animation as the user scrolls down
 const sections = document.querySelectorAll('section');
 const options = { threshold: 0.1 };
@@ -92,3 +59,16 @@ window.addEventListener('scroll', () => {
     const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
     pageSizeScrollIndicator.style.width = scrollPercent + '%';
 });
+
+// request full screen, on load.
+window.onload = function () {
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) { /* Firefox */
+        document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) { /* IE/Edge */
+        document.documentElement.msRequestFullscreen();
+    }
+};

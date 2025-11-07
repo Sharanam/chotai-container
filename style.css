@@ -136,6 +136,17 @@ body {
         /* aspect-ratio: 1/3; */
         filter: saturate(1.6);
     }
+
+    .frame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        opacity: 0.7;
+        z-index: -1;
+    }
 }
 
 section.names {
@@ -148,7 +159,7 @@ section.names {
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        height: 320px;
+        height: 180px;
         max-width: 900px;
         margin-inline: auto;
         gap: 20px;
@@ -158,7 +169,7 @@ section.names {
         position: absolute;
         bottom: 0px;
         left: 100%;
-        transform: translateX(-50%);
+        transform: translateX(-90%);
         max-height: 150px;
         /* aspect-ratio: 1/3; */
         filter: saturate(1.6);
@@ -172,6 +183,7 @@ section.names {
     width: 20ch;
     margin-inline: auto;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 #recipient-name {
@@ -187,14 +199,15 @@ section.names {
         left: 0;
         bottom: 4px;
         min-width: 100%;
-        width: 20ch;
+        /* width: 20ch; */
         display: block;
         border-bottom: 1px solid #B22222;
     }
 }
 
 section {
-    min-height: 100vh;
+    min-height: 95dvh;
+
     max-width: 600px;
     margin-inline: auto;
     padding: 50px 0;
@@ -219,9 +232,15 @@ section {
 section.names {
     .g2 {
         /* 90% of container */
-        width: 90%;
-        max-width: 400px;
+        max-height: 250px;
         margin-bottom: 30px;
+    }
+
+    .hands {
+        height: 100px;
+        margin: 0 10px;
+        margin-inline: auto;
+        display: block;
     }
 }
 
@@ -240,13 +259,22 @@ section.names {
     font-size: 3.5em;
     color: #8B4513;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding-inline: 30px;
+    text-shadow: 2px 2px 4px rgba(189, 75, 75, 0.44);
 }
 
 .family-name {
     font-size: 2.5em;
     color: #D2691E;
     margin-bottom: 30px;
+}
+
+.day-sec {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    margin-bottom: 5px;
 }
 
 .day-title {
@@ -258,7 +286,8 @@ section.names {
 .day-date {
     font-size: 1.5em;
     color: #666;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .events-timeline {
@@ -269,7 +298,7 @@ section.names {
 .event-item {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.2);
     margin: 20px 0;
     padding: 25px;
     border-radius: 15px;
@@ -384,4 +413,19 @@ section.names {
             display: none;
         }
     }
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.column-names {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 10px;
 }
