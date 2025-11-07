@@ -1,6 +1,10 @@
 const names = [{
     "mmlht": "શરણમ ચોટાઈ",
-    "avcot": "પ્રિયંકા પટેલ"
+    "avcot": "પ્રિયંકા પટેલ",
+    "kamleshmasa": "કમલેશ કારિયા",
+    "sureshbhai": "સુરેશભાઈ પટેલ",
+    "jayshreeben": "જયશ્રીબેન પટેલ",
+    "family": "પ્રિય પરિવાર અને મિત્રો"
 }]
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -12,9 +16,9 @@ if (id && names[0][id]) {
         recipientElement.textContent = names[0][id];
     }
 } else {
-    const recipientElement = document.getElementById('recipient-name');
-    if (recipientElement) {
-        recipientElement.textContent = "સ્નેહી મહેમાન";
+    const p = document.getElementById('invitation-recipient');
+    if (p) {
+        p.remove()
     }
 }
 
