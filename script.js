@@ -28,8 +28,14 @@ const names = [
     ak: "Aryaman Pravinbhai Karde and Family",
     pv: "Parth Nareshbhai Vaswani and Family",
     noroxen: "Shiv Patel and Family",
+    girls: "Aayushi & Yogita",
+    shailesh: "Shailesh Parmar and Family",
+    friends: "Janki, Radha, Anjali, Noor, Mahima, Amrita, Rafik, OP.",
+    mcom: "Namrata, Janki, Nisha, Aishwarya.",
+    kajal: "કાજલ ચૌહાણ અને પરિવાર",
+    rasula: "રસુલા અને પરિવાર",
     idxteam:
-      "સાઇમન વર્ઘીસ, ભાવેશ ગુપ્તા, દિક્ષિત સોલંકી, દીપ પટેલ, દર્શક શાહ, દીપ શર્મા, અંકુર શર્મા. (સહ-પરિવાર)",
+      "Simon Varghese, Darshak Shah, Bhavesh Gupta, Dixit Solanki, Deepkumar Patel, Deep Sharma, Ankur Sharma. (with families)",
   },
 ];
 

@@ -1,225 +1,306 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kankotri</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        .loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: wheat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: brown;
-            font-size: 2rem;
-            font-weight: bold;
-            z-index: 9999;
-        }
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: wheat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: brown;
+        font-size: 2rem;
+        font-weight: bold;
+        z-index: 9999;
+      }
     </style>
-</head>
+  </head>
 
-<div class="loading">
-    Loading...
-</div>
-<script>
+  <div class="loading">Loading...</div>
+  <script>
     // until all the assets are being loaded, show loading screen
     document.onreadystatechange = function () {
-        if (document.readyState !== "complete") {
-            document.querySelector(".loading").style.display = "block";
-        } else {
-            document.querySelector(".loading").style.display = "none";
-        }
+      if (document.readyState !== "complete") {
+        document.querySelector(".loading").style.display = "block";
+      } else {
+        document.querySelector(".loading").style.display = "none";
+      }
     };
-</script>
+  </script>
 
-<body>
-
+  <body>
     <div class="top-margin"></div>
     <div class="container">
-        <!-- Header Section -->
-        <section class="header-section">
-            <div class="image-container">
-                <!-- <div id="header-animation"></div> -->
-                <img src="./assets/images/Gemini_Generated_Image_lzoakllzoakllzoa.png" alt="Wedding Rings"
-                    class="ganpati">
-                <img src="./assets/images/fl-purple.png" alt="Wedding Rings" class="fl-purple">
-                <img src="./assets/images/fl-purple.png" alt="Wedding Rings" class="fl-purple-rev">
+      <!-- Header Section -->
+      <section class="header-section">
+        <div class="image-container">
+          <!-- <div id="header-animation"></div> -->
+          <img
+            src="./assets/images/Gemini_Generated_Image_lzoakllzoakllzoa.png"
+            alt="Wedding Rings"
+            class="ganpati"
+          />
+          <img
+            src="./assets/images/fl-purple.png"
+            alt="Wedding Rings"
+            class="fl-purple"
+          />
+          <img
+            src="./assets/images/fl-purple.png"
+            alt="Wedding Rings"
+            class="fl-purple-rev"
+          />
+        </div>
+        <img src="assets/images/frame-ztabf.png" alt="" class="frame" />
+
+        <h2 class="family-name">લગ્ન નિમંત્રણ</h2>
+        <h1 class="main-title">
+          ચોટાઈ પરિવાર આપનું ભાવભર્યું સ્વાગત કરે છે !!
+        </h1>
+      </section>
+      <section>
+        <h2 class="day-title t-center">માંગલિક પ્રસંગો</h2>
+        <div class="day-sec">
+          <div class="day-header">
+            <p class="day-date">બુધવાર તા. ૨૬-૧૧-૨૦૨૫, માગસર સુદ ૬</p>
+          </div>
+          <div class="events-timeline">
+            <div class="event-item">
+              <div class="event-time">સાંજે ૬ કલાકે</div>
+              <img
+                src="assets/images/dholi.png"
+                alt=""
+                class="event-illustration"
+              />
+              <div class="event-details">
+                <h3>સાંજીના ગીત</h3>
+              </div>
             </div>
-            <img src="assets/images/frame-ztabf.png" alt="" class="frame">
+          </div>
+        </div>
+        <div class="day-sec">
+          <div class="day-header">
+            <p class="day-date">ગુરુવાર તા. ૨૭-૧૧-૨૦૨૫, માગસર સુદ ૭</p>
+          </div>
 
-            <h2 class="family-name">લગ્ન નિમંત્રણ</h2>
-            <h1 class="main-title">ચોટાઈ પરિવાર આપનું ભાવભર્યું સ્વાગત કરે છે !!</h1>
-        </section>
-        <section>
-            <h2 class="day-title t-center">માંગલિક પ્રસંગો</h2>
-            <div class="day-sec">
-                <div class="day-header">
-                    <p class="day-date">બુધવાર તા. ૨૬-૧૧-૨૦૨૫, માગસર સુદ ૬</p>
-                </div>
-                <div class="events-timeline">
-                    <div class="event-item">
-                        <div class="event-time">સાંજે ૬ કલાકે</div>
-                        <img src="assets/images/dholi.png" alt="" class="event-illustration">
-                        <div class="event-details">
-                            <h3>સાંજીના ગીત</h3>
-                        </div>
-                    </div>
-                </div>
+          <div class="events-timeline">
+            <div class="event-item">
+              <div class="event-time">સવારે ૭:૩૦ કલાકે</div>
+              <img
+                src="assets/images/mala.png"
+                alt=""
+                class="event-illustration"
+              />
+
+              <div class="event-details">
+                <h3>માળારોપણ</h3>
+              </div>
             </div>
-            <div class="day-sec">
+            <div class="event-item">
+              <div class="event-time">સવારે ૦૮:૩૦ કલાકે</div>
+              <img
+                src="assets/images/ganesh.png"
+                alt=""
+                class="event-illustration"
+              />
 
-                <div class="day-header">
-                    <p class="day-date">ગુરુવાર તા. ૨૭-૧૧-૨૦૨૫, માગસર સુદ ૭</p>
-                </div>
-
-                <div class="events-timeline">
-                    <div class="event-item">
-                        <div class="event-time">સવારે ૭:૩૦ કલાકે</div>
-                        <img src="assets/images/mala.png" alt="" class="event-illustration">
-
-                        <div class="event-details">
-                            <h3>માળારોપણ</h3>
-                        </div>
-                    </div>
-                    <div class="event-item">
-                        <div class="event-time">સવારે ૦૮:૩૦ કલાકે</div>
-                        <img src="assets/images/ganesh.png" alt="" class="event-illustration">
-
-                        <div class="event-details">
-                            <h3>ગણેશ સ્થાપના અને મંડપ મુહર્ત</h3>
-                        </div>
-                    </div>
-                    <div class="event-item">
-                        <div class="event-time">સવારે ૯ કલાકે</div>
-                        <img src="assets/images/mandap.png" alt="" class="event-illustration">
-
-                        <div class="event-details">
-                            <h3>ગ્રહશાંતિ</h3>
-                        </div>
-                    </div>
-                    <div class="event-item">
-                        <div class="event-time">બપોરે ૧ કલાકે</div>
-                        <img src="assets/images/food.png" alt="" class="event-illustration">
-                        <div class="event-details">
-                            <h3>સ્વરુચિ ભોજન સમારંભ</h3>
-                        </div>
-                    </div>
-                    <div class="event-item">
-                        <div class="event-time">બપોરે ૩:૪૫ કલાકે</div>
-                        <img src="assets/images/hands.png" alt="" class="event-illustration">
-
-                        <div class="event-details">
-                            <h3>હસ્તમેળાપ</h3>
-                        </div>
-                    </div>
-                </div>
+              <div class="event-details">
+                <h3>ગણેશ સ્થાપના અને મંડપ મુહર્ત</h3>
+              </div>
             </div>
-            <div class="darshanabhilashi">
-                <div class="t-center title">દર્શનાભિલાષી:</div>
-                <div style="background-image: url('assets/images/conclusion.png'); background-size: cover; width: 100%; height: 50px; transform: rotate(180deg)"
-                    class="conclusion-ribbon"></div>
-                <p>શરણમ મહેશભાઈ ચોટાઈ</p>
-                <p>હિતેશભાઈ હિંમતભાઇ ચોટાઈ</p>
-                <div style="background-image: url('assets/images/conclusion.png'); background-size: cover; width: 100%; height: 50px; "
-                    class="conclusion-ribbon"></div>
-            </div>
-        </section>
-        <section class="names" style="padding: 5px;">
-            <h3>।। શ્રી મદનમોહન પ્રભુ વિજયતે ।।</h3>
-            <h3>।। શ્રીનાથજી સત્ય છે. ।।</h3>
-            <img src="assets/images/shreeji.png" alt="" class="shreeji">
-            <p class="invitation-recipient" id="invitation-recipient">સ્નેહી સ્વજનશ્રી
-                <span id="recipient-name"></span>
-            </p>
-            <p class="invitation-text">સહર્ષ ખુશાલી સાથે જણાવવાનું કે શ્રી નિકુંજનાયક શ્રીનાથજી બાવાની અસીમ કૃપાથી
-                <br>
-                અ.
-                સૌ. જાગૃતિબેન તથા શ્રી મહેશભાઈ હિંમતભાઇ ચોટાઈ ની સુપુત્રી
-                <strong>ચિ. સુરેખા</strong>
-                <img src="assets/images/couple1.png" alt="" class="couple1">
-                (ના શુભ લગ્ન) વડોદરા નિવાસી
-                <strong>ચિ. જહ્‌નુ</strong>
-                <!-- <img src="assets/images/hands.png" alt="" class="hands"> -->
-                અ.સૌ. સોનલબેન તથા અતુલભાઈ માધવજીભાઈ ધોકાઈના સુપુત્ર સાથે
-            <p>
-                સં ૨૦૮૨ માગસર સુદ ૭ ને ગુરૂવાર તા. ૨૭-૧૧-૨૦૨૫ના
-                રોજ
-            </p>
-            <p class="t-center">
-                નિર્ધારેલ છે તો આ શુભ પ્રસંગે નવદંપતિને આશીર્વાદ આપવા સકુટુંબ સહિત વહેલાસર પધારી શોભામાં અભિવૃદ્ધિ
-                કરશોજી.
-            </p>
-            </p>
-            <div class="snehadhin">
-                <div class="t-center title"> લિ. સ્નેહાધીન </div>
-                <div class="column-names">
-                    <p><b>સ્વ. હિંમતલાલ રૂગનાથભાઈ ચોટાઈ</b></p>
-                    <p><b>સ્વ. દિવાળીબેન હિંમતલાલ ચોટાઈ</b></p>
-                    <p><b>સ્વ. કાંતિભાઈ રૂગનાથભાઈ ચોટાઈ</b></p>
-                    <p><b>સ્વ. કુ. કંચનબેન રૂગનાથભાઈ ચોટાઈ</b></p>
-                    <p><b>સ્વ. કુ. રંજનબેન હિંમતલાલ ચોટાઈ</b></p>
-                    <p>તથા સમસ્ત ચોટાઈ પરિવારનાં જય શ્રી કૃષ્ણ!!</p>
-                </div>
-            </div>
-            <div class="image-container"><img src="./assets/images/pkk.png" alt="Wedding Rings" class="pkk">
+            <div class="event-item">
+              <div class="event-time">સવારે ૯ કલાકે</div>
+              <img
+                src="assets/images/mandap.png"
+                alt=""
+                class="event-illustration"
+              />
 
-                <img src="assets/images/cow.png" alt="" class="cow">
+              <div class="event-details">
+                <h3>ગ્રહશાંતિ</h3>
+              </div>
             </div>
-        </section>
-
-        <!-- Venue & Contact Section -->
-        <section class="venue-section">
-            <div class="venue-info">
-                <h2>શુભ સ્થળ</h2>
-                <p><strong>સ્થળ:</strong> શ્રી જલારામ રઘુવંશી લોહાણા કૉમ્યૂનિટી સેન્ટર, ડોમિનોઝ પિઝાની
-                    ગલીમાં, ઈલોરાપાર્ક, વડોદરા.</p>
-
-                <h3 class="google-maps-link"><a href="https://maps.app.goo.gl/X8sY8m9YEeTsVr548" target="_blank"
-                        rel="noopener noreferrer">ગૂગલ
-                        મેપ્સ ખોલવા માટે અહીં ક્લિક કરો</a></h3>
-                <br />
-                <div class="map-wrapper"
-                    style="max-width:100%;height:0;padding-bottom:56%;position:relative;overflow: hidden;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d609.1454209220799!2d73.16301961863628!3d22.315936331218637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc90cb0e72a93%3A0x2ced85ecb0a2b85c!2sShri%20Jalaram%20Raghuvanshi%20Lohana%20Community%20Centre!5e1!3m2!1sen!2sin!4v1762486498337!5m2!1sen!2sin"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <p class="t-center" style="border-top: 1px solid #8b8b8b; padding-top: 10px;">
-                    <b>
-                        તા.ક.: આ ઓનલાઈન કંકોત્રીને રૂબરૂ મળ્યા તુલ્ય સમજી, અવશ્ય પધારશો.
-                    </b>
-                </p>
+            <div class="event-item">
+              <div class="event-time">બપોરે ૧ કલાકે</div>
+              <img
+                src="assets/images/food.png"
+                alt=""
+                class="event-illustration"
+              />
+              <div class="event-details">
+                <h3>સ્વરુચિ ભોજન સમારંભ</h3>
+              </div>
             </div>
-        </section>
+            <div class="event-item">
+              <div class="event-time">બપોરે ૩:૪૫ કલાકે</div>
+              <img
+                src="assets/images/hands.png"
+                alt=""
+                class="event-illustration"
+              />
 
-        <section class="self-promotion">
-            <p>શરણમ ચોટાઈ દ્વારા ડિઝાઇન અને વિકસિત.</p>
-            <br>
-            <p>સંપર્ક: <a href="tel:+918347975365">+91 834 797 5365</a> અથવા <a target="_blank"
-                    href="https://wa.me/918347975365?text=Hello%20Sharanam%2C%20I%20want%20to%20discuss%20whether%20I%20can%20have%20similar%20invitation%20card%20for...">WhatsApp
-                    me!!!</a></p>
-        </section>
-        <div class="page-size-scroll-indicator"></div>
-        <div class="bottom-margin"></div>
+              <div class="event-details">
+                <h3>હસ્તમેળાપ</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="darshanabhilashi">
+          <div class="t-center title">દર્શનાભિલાષી:</div>
+          <div
+            style="
+              background-image: url(&quot;assets/images/conclusion.png&quot;);
+              background-size: cover;
+              width: 100%;
+              height: 50px;
+              transform: rotate(180deg);
+            "
+            class="conclusion-ribbon"
+          ></div>
+          <p>શરણમ મહેશભાઈ ચોટાઈ</p>
+          <p>હિતેશભાઈ હિંમતભાઇ ચોટાઈ</p>
+          <div
+            style="
+              background-image: url(&quot;assets/images/conclusion.png&quot;);
+              background-size: cover;
+              width: 100%;
+              height: 50px;
+            "
+            class="conclusion-ribbon"
+          ></div>
+        </div>
+      </section>
+      <section class="names" style="padding: 5px">
+        <h3>।। શ્રી મદનમોહન પ્રભુ વિજયતે ।।</h3>
+        <h3>।। શ્રીનાથજી સત્ય છે. ।।</h3>
+        <img src="assets/images/shreeji.png" alt="" class="shreeji" />
+        <p class="invitation-recipient" id="invitation-recipient">
+          સ્નેહી સ્વજનશ્રી
+          <span id="recipient-name"></span>
+        </p>
+        <p class="invitation-text">
+          સહર્ષ ખુશાલી સાથે જણાવવાનું કે શ્રી નિકુંજનાયક શ્રીનાથજી બાવાની અસીમ
+          કૃપાથી
+          <br />
+          અ. સૌ. જાગૃતિબેન તથા શ્રી મહેશભાઈ હિંમતભાઇ ચોટાઈ ની સુપુત્રી
+          <strong>ચિ. સુરેખા</strong>
+          <img src="assets/images/couple1.png" alt="" class="couple1" />
+          (ના શુભ લગ્ન) વડોદરા નિવાસી
+          <strong>ચિ. જહ્‌નુ</strong>
+          <!-- <img src="assets/images/hands.png" alt="" class="hands"> -->
+          અ.સૌ. સોનલબેન તથા અતુલભાઈ માધવજીભાઈ ધોકાઈના સુપુત્ર સાથે
+        </p>
+
+        <p>સં ૨૦૮૨ માગસર સુદ ૭ ને ગુરૂવાર તા. ૨૭-૧૧-૨૦૨૫ના રોજ</p>
+        <p class="t-center">
+          નિર્ધારેલ છે તો આ શુભ પ્રસંગે નવદંપતિને આશીર્વાદ આપવા સકુટુંબ સહિત
+          વહેલાસર પધારી શોભામાં અભિવૃદ્ધિ કરશોજી.
+        </p>
+
+        <div class="snehadhin">
+          <div class="t-center title">લિ. સ્નેહાધીન</div>
+          <div class="column-names">
+            <p><b>સ્વ. હિંમતલાલ રૂગનાથભાઈ ચોટાઈ</b></p>
+            <p><b>સ્વ. દિવાળીબેન હિંમતલાલ ચોટાઈ</b></p>
+            <p><b>સ્વ. કાંતિભાઈ રૂગનાથભાઈ ચોટાઈ</b></p>
+            <p><b>સ્વ. કુ. કંચનબેન રૂગનાથભાઈ ચોટાઈ</b></p>
+            <p><b>સ્વ. કુ. રંજનબેન હિંમતલાલ ચોટાઈ</b></p>
+            <p>તથા સમસ્ત ચોટાઈ પરિવારનાં જય શ્રી કૃષ્ણ!!</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./assets/images/pkk.png" alt="Wedding Rings" class="pkk" />
+
+          <img src="assets/images/cow.png" alt="" class="cow" />
+        </div>
+      </section>
+
+      <!-- Venue & Contact Section -->
+      <section class="venue-section">
+        <div class="venue-info">
+          <h2>શુભ સ્થળ</h2>
+          <p>
+            <strong>સ્થળ:</strong> શ્રી જલારામ રઘુવંશી લોહાણા કૉમ્યૂનિટી સેન્ટર,
+            ડોમિનોઝ પિઝાની ગલીમાં, ઈલોરાપાર્ક, વડોદરા.
+          </p>
+
+          <h3 class="google-maps-link">
+            <a
+              href="https://maps.app.goo.gl/X8sY8m9YEeTsVr548"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ગૂગલ મેપ્સ ખોલવા માટે અહીં ક્લિક કરો</a
+            >
+          </h3>
+          <br />
+          <div
+            class="map-wrapper"
+            style="
+              max-width: 100%;
+              height: 0;
+              padding-bottom: 56%;
+              position: relative;
+              overflow: hidden;
+            "
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d609.1454209220799!2d73.16301961863628!3d22.315936331218637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc90cb0e72a93%3A0x2ced85ecb0a2b85c!2sShri%20Jalaram%20Raghuvanshi%20Lohana%20Community%20Centre!5e1!3m2!1sen!2sin!4v1762486498337!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <p
+            class="t-center"
+            style="border-top: 1px solid #8b8b8b; padding-top: 10px"
+          >
+            <b>
+              તા.ક.: આ ઓનલાઈન કંકોત્રીને રૂબરૂ મળ્યા તુલ્ય સમજી, અવશ્ય પધારશો.
+            </b>
+          </p>
+        </div>
+      </section>
+
+      <section class="self-promotion">
+        <p>શરણમ ચોટાઈ દ્વારા ડિઝાઇન અને વિકસિત.</p>
+        <br />
+        <p>
+          સંપર્ક: <a href="tel:+918347975365">+91 834 797 5365</a> અથવા
+          <a
+            target="_blank"
+            href="https://wa.me/918347975365?text=Hello%20Sharanam%2C%20I%20want%20to%20discuss%20whether%20I%20can%20have%20similar%20invitation%20card%20for..."
+            >WhatsApp me!!!</a
+          >
+        </p>
+      </section>
+      <div class="page-size-scroll-indicator"></div>
+      <div class="bottom-margin"></div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
-        integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+      integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
