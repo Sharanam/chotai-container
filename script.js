@@ -35,6 +35,7 @@ const names = [
     mcom: "Namrata, Janki, Nisha, Aishwarya.",
     kajal: "કાજલ ચૌહાણ અને પરિવાર",
     rasula: "રસુલા અને પરિવાર",
+    mcagirls: "ખ્યાતિ કારિયા, રોશની ધીમ્મર",
     idxteam:
       "Simon Varghese, Darshak Shah, Bhavesh Gupta, Dixit Solanki, Deepkumar Patel, Deep Sharma, Ankur Sharma. (with families)",
   },
