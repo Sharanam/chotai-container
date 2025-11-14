@@ -21,7 +21,7 @@ const names = [
     joshi: "દિલીપભાઈ જોશી અને પરિવાર",
     agarwal: "Sanjaykumar Agarwal and Family",
     jagwani: "અમિતભાઇ જગવાણી અને પરિવાર",
-    jagwaniandcompany: "Jagwani and Company",
+    jagwaniandcompany: "Payal,harshita,Pooja,shrushti,aashtha,<br> Harsh,Yash,parth",
     dipikachauhan: "દીપિકા ચૌહાણ",
     kanabar: "કૃષ્ણકુમાર ભગવાનજીભાઈ કાનાબાર અને પરિવાર",
     sk: "શશીકાંત મકનભાઈ મકવાણા અને પરિવાર",
@@ -48,7 +48,7 @@ const id = urlParams.get("id");
 if (id && names[0][id]) {
   const recipientElement = document.getElementById("recipient-name");
   if (recipientElement) {
-    recipientElement.textContent = names[0][id];
+    recipientElement.innerHTML = names[0][id];
   }
 } else {
   const p = document.getElementById("invitation-recipient");
