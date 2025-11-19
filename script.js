@@ -22,7 +22,8 @@ const names = [
     joshi: "દિલીપભાઈ જોશી અને પરિવાર",
     agarwal: "Sanjaykumar Agarwal and Family",
     jagwani: "અમિતભાઇ જગવાણી અને પરિવાર",
-    jagwaniandcompany: "Payal,harshita,Pooja,shrushti,aashtha,<br> Harsh,Yash,parth",
+    jagwaniandcompany:
+      "Payal,harshita,Pooja,shrushti,aashtha,<br> Harsh,Yash,parth",
     dipikachauhan: "દીપિકા ચૌહાણ",
     kanabar: "કૃષ્ણકુમાર ભગવાનજીભાઈ કાનાબાર અને પરિવાર",
     sk: "શશીકાંત મકનભાઈ મકવાણા અને પરિવાર",
@@ -96,3 +97,15 @@ window.addEventListener("scroll", () => {
   const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
   pageSizeScrollIndicator.style.width = scrollPercent + "%";
 });
+
+// Tab functionality
+function showTab(evt, tabName) {
+  const tabContents = document.querySelectorAll(".tab-content");
+  tabContents.forEach((tab) => tab.classList.remove("active"));
+
+  const tabButtons = document.querySelectorAll(".tab-button");
+  tabButtons.forEach((btn) => btn.classList.remove("active"));
+
+  document.getElementById(tabName).classList.add("active");
+  evt.currentTarget.classList.add("active");
+}
