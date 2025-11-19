@@ -38,6 +38,10 @@
         document.querySelector(".loading").style.display = "block";
       } else {
         document.querySelector(".loading").style.display = "none";
+        // scroll to the arrangement section
+        document
+          .querySelector(".service")
+          .scrollIntoView({ behavior: "smooth" });
       }
     };
   </script>
