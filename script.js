@@ -1,3 +1,4 @@
+location.redirect = 'https://www.linkedin.com/in/sharanam-chotai'
 const names = [
   {
     kamleshmasa: "કમલેશકુમાર ચંદ્રકાન્તભાઈ  કારિયા અને પરિવાર",
