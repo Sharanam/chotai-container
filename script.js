@@ -34,7 +34,7 @@ function saveContent() {
 
   if (editor) {
     localStorage.setItem("editorContent", editor.innerHTML);
-    myPopup("Content saved to localStorage!");
+    // myPopup("Content saved to localStorage!");
   }
 }
 
@@ -59,14 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// auto save every 3 seconds with debounce
 let autoSaveTimeout;
-
 function autoSave() {
   clearTimeout(autoSaveTimeout);
   autoSaveTimeout = setTimeout(() => {
     saveContent();
-  }, 3000);
+  }, 1500);
 }
 
 // document.querySelector('.editor').addEventListener('input', autoSave);
